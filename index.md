@@ -51,5 +51,5 @@ TODO: Links to other relevant resources. Other groups with the same
 focus, conferences, etc.
 
 * Data
- * [https://data.sfgov.org/](SF OpenData)
- * [http://codeforpittsburgh.github.io/#15/40.4416/-80.0126](Code for Pittsburgh)
+ * (SF OpenData)[https://data.sfgov.org/]
+ * (Code for Pittsburgh)[http://codeforpittsburgh.github.io]
