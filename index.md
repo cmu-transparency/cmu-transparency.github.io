@@ -5,6 +5,12 @@
 TODO: News about the group but also related to the group's topics of
 security, privacy, and fairness. RSS feed as well?
 
+## Calendar
+
+TODO: Relevant events in a google (or other subscribable) calendar.
+Include group meetings but also relevant conference deadlines and
+conference dates.
+
 ## People
 
 TODO: Links to everyone's website and perhaps a small photo of
@@ -38,8 +44,7 @@ abstract and bibtex entries for each.
 TODO: Published code, though this might fit better in the projects
 section.
 
-## Calendar
+## See also
 
-TODO: Relevant events in a google (or other subscribable) calendar.
-Include group meetings but also relevant conference deadlines and
-conference dates.
+TODO: Links to other relevant resources. Other groups with the same
+focus, conferences, etc.
