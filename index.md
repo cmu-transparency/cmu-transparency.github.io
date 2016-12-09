@@ -1,11 +1,7 @@
 ---
 layout: page
-title: SPFF@CMU
-tagline: asdf
-description: Security / Privacy / Fairness Foundations at CMU
+title: main
 ---
-
-# Security / Privacy / Fairness Foundations at CMU
 
 ## News
 
