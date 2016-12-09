@@ -1,4 +1,4 @@
-exclude: ["Rakefile"]
+exclude: ["Rakefile", "Readme.md"]
 
 title : Security / Privacy / Fairness Foundations at CMU
 author : 
