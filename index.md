@@ -1,9 +1,7 @@
 ---
 layout: page
-title:
+title: News
 ---
-
-## News
 
 TODO: News about the group but also related to the group's topics of
 security, privacy, and fairness. RSS feed as well?
