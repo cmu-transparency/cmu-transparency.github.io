@@ -29,6 +29,7 @@ everyone next to their name/link.
 * Anand Sankar (MS student)
 * Shayak Sen (PhD student)
 * Ryan Wagner (PhD student)
+* Samuel Yeom (PhD student)
 
 ## Projects
 
