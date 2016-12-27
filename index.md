@@ -12,6 +12,10 @@ TODO: Relevant events in a google (or other subscribable) calendar.
 Include group meetings but also relevant conference deadlines and
 conference dates.
 
+<iframe
+src="https://calendar.google.com/calendar/embed?src=fuj58c65qid5ljt6bpi3cv2ei0%40group.calendar.google.com&ctz=America/New_York"
+style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
 ## People
 
 TODO: Links to everyone's website and perhaps a small photo of
