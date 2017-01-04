@@ -13,8 +13,8 @@ Include group meetings but also relevant conference deadlines and
 conference dates.
 
 <iframe
-src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=fuj58c65qid5ljt6bpi3cv2ei0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FNew_York"
-style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=fuj58c65qid5ljt6bpi3cv2ei0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FNew_York"
+style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## People
 
