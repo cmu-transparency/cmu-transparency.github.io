@@ -33,12 +33,12 @@
     .person {
     float: left;
     text-align: center;
-    width:120px;
+    width:140px;
     padding: 5px;
     }
     
     .person img {
-      height: 100px;
+      height: 120px;
     }
   </style>
   
@@ -68,7 +68,7 @@
                      src="images/logo.png" alt="SPF@CMU logo"/><span>SPF@CMU</span>
               </a>
 
-              <button type="button" class="navbar-toggle collapsed navbar-toggle-left"
+              <button type="button" class="navbar-toggle collapsed"
                       data-toggle="collapse"
                       data-target="#bs-example-navbar-collapse-1"
                       aria-expanded="false">
@@ -81,13 +81,13 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#news">News</a></li>
-                <li><a href="#calendar">Calendar</a></li>
-                <li><a href="#people">People</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#papers">Papers</a></li>
-                <li><a href="#code">Code</a></li>
-                <li><a href="#resources">Resources</a></li>
+                <li><a href="#news" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
+                <li><a href="#calendar" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
+                <li><a href="#people" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
+                <li><a href="#projects" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a></li>
+                <li><a href="#papers" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Papers</a></li>
+                <li><a href="#code" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>
+                <li><a href="#resources" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Resources</a></li>
               </ul>
             </div>
             </div>
@@ -99,6 +99,32 @@
             presently under construction.</div>
         </div>
 
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h2><a name="people"></a>People</h2></div>
+            <div class="panel-body" style="text-align:center;">
+              <!-- TODO: Links to everyone's website and perhaps a small photo of
+              everyone next to their name/link.-->
+              
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Anupam Datta</a><br/>(prof.)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Matt Fredrikson</a><br/>(prof.)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Alejandro Carbonara</a><br/>(PhD student)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Amit Datta</a><br/>(PhD student)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Raj Gupta</a><br/>(MS student)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Gihyuk Ko</a><br/>(PhD student)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Sophia Kovaleva</a><br/>(PhD student)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Klas Leino</a><br/>(PhD student)</div>
+                <div class="person"><a href="http://piotr.mardziel.com"><img class="img-rounded" src="http://piotr.mardziel.com/images/wolf_gap1_mug.jpg"/><br/>Piotr Mardziel</a> (postdoc)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Anand Sankar</a><br/>(MS student)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Shayak Sen</a><br/>(PhD student)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Ryan Wagner</a><br/>(PhD student)</div>
+                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Samuel Yeom</a><br/>(PhD student)</div>
+            </div>
+          </div>
+        </div>
+        
+
+        
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="panel panel-default">
             <div class="panel-heading"><h2><a name="news"></a>News</h2></div>
@@ -120,31 +146,6 @@
               <!-- TODO: Relevant events in a google (or other subscribable) calendar.
               Include group meetings but also relevant conference deadlines and
               conference dates.-->
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h2><a name="people"></a>People</h2></div>
-            <div class="panel-body" style="text-align:center;">
-              <!-- TODO: Links to everyone's website and perhaps a small photo of
-              everyone next to their name/link.-->
-              
-                <div class="person">Anupam Datta (prof.)</div>
-                <div class="person">Matt Fredrikson (prof.)</div>
-                <div class="person">Alejandro Carbonara (PhD student)</div>
-                <div class="person">Amit Datta (PhD student)</div>
-                <div class="person">Raj Gupta (MS student)</div>
-                <div class="person">Gihyuk Ko (PhD student)</div>
-                <div class="person">Sophia Kovaleva (PhD student)</div>
-                <div class="person">Klas Leino (PhD student)</div>
-                <div class="person"><a href="http://piotr.mardziel.com"><img class="img-rounded" src="http://piotr.mardziel.com/images/wolf_gap1_mug.jpg"/><br>Piotr Mardziel</a> (postdoc)</div>
-                <div class="person">Anand Sankar (MS student)</div>
-                <div class="person">Shayak Sen (PhD student)</div>
-                <div class="person">Ryan Wagner (PhD student)</div>
-                <div class="person">Samuel Yeom (PhD student)</div>
-                
             </div>
           </div>
         </div>
