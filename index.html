@@ -18,14 +18,14 @@
 
   <style type="text/css">
     .row.no-gutter {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     }
 
     .row.no-gutter [class*='col-']:not(:first-child),
     .row.no-gutter [class*='col-']:not(:last-child) {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
     }
 
     h1,h2,h3,h4 {
@@ -37,7 +37,9 @@
     display: inline-block;
     font-size: 16px;
     align: center;
-    vertical-align: middle;
+    vertical-align: top;
+    margin: 0px 0px;
+    padding: 0px 0px;
     padding-bottom: 10px;
     }
     
@@ -49,10 +51,11 @@
 </head>
   
   <body>
-    <div class="container-fluid">
-      <div class="row no-gutter">
-        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg" style="padding-top:70px;"></div>
-        <div class="col-md-12 hidden-xs hidden-sm">
+    <div class="container-fluid" style="padding: 0 0px; margin: 0 0px;">
+      <div class="row" style="padding: 0 0px; margin: 0 0px;">
+        
+        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg" style="padding-top:60px;"></div>
+        <div class="col-md-12 hidden-xs hidden-sm" style="padding: 0px; margin-bottom:-10px;">
           <nav class="navbar navbar-inverse navbar-static-top">
             <div class="navbar-header">
               <a class="navbar-brand" href="http://www.fairlyaccountable.org">
@@ -85,12 +88,12 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#news" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
-                <li><a href="#calendar" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
-                <li><a href="#people" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
-                <li><a href="#projects" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a></li>
-                <li><a href="#papers" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Papers</a></li>
-                <li><a href="#code" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>
+                <li><a href="#news"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
+                <li><a href="#calendar"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
+                <li><a href="#people"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
+                <li><a href="#projects"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a></li>
+                <li><a href="#papers"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Papers</a></li>
+                <li><a href="#code"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>
                 <li><a href="#resources" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Resources</a></li>
               </ul>
             </div>
@@ -98,14 +101,11 @@
           </nav>
         </div>
 
-        <div class="col-xs-12">
-          <div class="alert alert-warning" role="alert">This website is
-            presently under construction.</div>
-        </div>
+        <div class="col-xs-12 alert alert-warning" role="alert">This website is presently under construction.</div>
 
-        <div class="col-xs-12 col-md-12 col-lg-12">
-          <a name="people"></a>
-          <div class="row" style="font-size: 0px;">
+        <div class="col-xs-12 col-md-12 col-lg-12" style="padding: 0 0; margin: 0 0;">
+          <div class="container-fluid" style="margin: 0 0; padding: 0 0;"><a name="people"></a>
+          <div class="row no-gutter" style="font-size: 0px;">
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.andrew.cmu.edu/user/danupam/"><img class="img-rounded img-responsive" src="https://www.andrew.cmu.edu/user/danupam/ad.jpg">Anupam Datta</a><br/>(prof.)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/~mfredrik/"><img class="img-rounded img-responsive" src="http://www.cs.cmu.edu/~mfredrik/images/mfredrik.jpg">Matt Fredrikson</a><br/>(prof.)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/~auc/"><img class="img-rounded img-responsive" src="http://www.cs.cmu.edu/afs/cs/user/auc/www/alejandro.jpg">Alejandro Carbonara</a><br/>(PhD student)</div>
@@ -119,6 +119,17 @@
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/directory/rrwagner"><img class="img-rounded img-responsive" src="http://isri.cmu.edu/education/se-phd/images/people/wagner-ryan-75.jpg"/>Ryan Wagner</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.linkedin.com/in/samuel-yeom-b6377bb8/"><img class="img-rounded img-responsive" src="images/person_missing.jpeg"/>Samuel Yeom</a><br/>(PhD student)</div>
           </div>
+          </div>
+          </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <a name="calendar"></a>
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=fuj58c65qid5ljt6bpi3cv2ei0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FNew_York"
+                  style="border-width:0" width="100%" height="300"
+                  frameborder="0" scrolling="no"></iframe>                
+              <!-- TODO: Relevant events in a google (or other subscribable) calendar.
+              Include group meetings but also relevant conference deadlines and
+              conference dates.-->
         </div>
         
         <div class="col-xs-12 col-md-6 col-lg-4">
@@ -131,26 +142,12 @@
             </div>
           </div>
         </div>
-        
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h2><a name="calendar"></a>Calendar</h2></div>
-            <div class="panel-body">
-              <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=fuj58c65qid5ljt6bpi3cv2ei0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FNew_York"
-                      style="border-width:0" width="100%" height="200"
-                      frameborder="0" scrolling="no"></iframe>                
-              <!-- TODO: Relevant events in a google (or other subscribable) calendar.
-              Include group meetings but also relevant conference deadlines and
-              conference dates.-->
-            </div>
-          </div>
-        </div>
+
         
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="panel panel-default">
             <div class="panel-heading"><h2><a name="projects"></a>Projects</h2></div>
             <div class="panel-body">
-                
               <!--TODO: Links to project pages and short descriptions of the projects.
               Maybe have one project for each grant and whatever
               else forms a projects.-->
@@ -176,6 +173,7 @@
             </div>
           </div>
         </div>
+        
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="panel panel-default">
             <div class="panel-heading"><h2><a name="resources"></a>Resources</h2></div>
