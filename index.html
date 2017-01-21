@@ -5,14 +5,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
   
-  <title>Foundations of Security and Privacy at CMU</title>
+  <title>Security and Privacy Foundations at CMU</title>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-  crossorigin="anonymous">
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
   <style type="text/css">
     .row.no-gutter {
@@ -31,14 +33,16 @@
     }
 
     .person {
-    float: left;
-    text-align: center;
-    width:140px;
-    padding: 5px;
+    float: none;
+    display: inline-block;
+    font-size: 16px;
+    align: center;
+    vertical-align: middle;
+    padding-bottom: 10px;
     }
     
     .person img {
-      height: 120px;
+
     }
   </style>
   
@@ -100,30 +104,22 @@
         </div>
 
         <div class="col-xs-12 col-md-12 col-lg-12">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h2><a name="people"></a>People</h2></div>
-            <div class="panel-body" style="text-align:center;">
-              <!-- TODO: Links to everyone's website and perhaps a small photo of
-              everyone next to their name/link.-->
-              
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Anupam Datta</a><br/>(prof.)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Matt Fredrikson</a><br/>(prof.)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Alejandro Carbonara</a><br/>(PhD student)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Amit Datta</a><br/>(PhD student)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Raj Gupta</a><br/>(MS student)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Gihyuk Ko</a><br/>(PhD student)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Sophia Kovaleva</a><br/>(PhD student)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Klas Leino</a><br/>(PhD student)</div>
-                <div class="person"><a href="http://piotr.mardziel.com"><img class="img-rounded" src="http://piotr.mardziel.com/images/wolf_gap1_mug.jpg"/><br/>Piotr Mardziel</a> (postdoc)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Anand Sankar</a><br/>(MS student)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Shayak Sen</a><br/>(PhD student)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Ryan Wagner</a><br/>(PhD student)</div>
-                <div class="person"><a href="#"><img class="img-rounded" src="missing"><br/>Samuel Yeom</a><br/>(PhD student)</div>
-            </div>
+          <a name="people"></a>
+          <div class="row" style="font-size: 0px;">
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.andrew.cmu.edu/user/danupam/"><img class="img-rounded img-responsive" src="https://www.andrew.cmu.edu/user/danupam/ad.jpg">Anupam Datta</a><br/>(prof.)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/~mfredrik/"><img class="img-rounded img-responsive" src="http://www.cs.cmu.edu/~mfredrik/images/mfredrik.jpg">Matt Fredrikson</a><br/>(prof.)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/~auc/"><img class="img-rounded img-responsive" src="http://www.cs.cmu.edu/afs/cs/user/auc/www/alejandro.jpg">Alejandro Carbonara</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.andrew.cmu.edu/user/amitdatt/"><img class="img-rounded img-responsive" src="https://www.andrew.cmu.edu/user/amitdatt/public/amit-datta.jpg">Amit Datta</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://sites.google.com/site/rajkiran2190/"><img class="img-rounded img-responsive" src="images/person_raj.jpeg">Raj Gupta</a><br/>(MS student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.linkedin.com/in/gihyukko/"><img class="img-rounded img-responsive" src="images/person_gihyuk.jpeg">Gihyuk Ko</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://testblogdontupvote.tumblr.com/"><img class="img-rounded img-responsive" src="images/person_sophia.jpeg"/>Sophia Kovaleva</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://leino-online.com/klas/"><img class="img-rounded img-responsive" src="http://leino-online.com/klas/pictures/klasHomepage0.jpg"/>Klas Leino</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://piotr.mardziel.com"><img class="img-rounded img-responsive" src="http://piotr.mardziel.com/images/wolf_gap1_mug.jpg"/>Piotr Mardziel</a> (postdoc)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/"><img class="img-rounded img-responsive" src="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/me.jpg"/>Shayak Sen</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/directory/rrwagner"><img class="img-rounded img-responsive" src="http://isri.cmu.edu/education/se-phd/images/people/wagner-ryan-75.jpg"/>Ryan Wagner</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.linkedin.com/in/samuel-yeom-b6377bb8/"><img class="img-rounded img-responsive" src="images/person_missing.jpeg"/>Samuel Yeom</a><br/>(PhD student)</div>
           </div>
         </div>
-        
-
         
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="panel panel-default">
