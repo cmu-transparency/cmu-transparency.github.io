@@ -52,8 +52,8 @@
     }
 
     .project img {
-      width: 300px;
-      height: 200px;
+      max-width: 85%;
+      /*max-height: 200px;*/
     }
   </style>
 
@@ -81,7 +81,7 @@
             <a class="navbar-brand"
                 href="http://www.fairlyaccountable.org">
               <img height="35" class="img-rounded" style="float:left; margin-right:10px; margin-top:-7px;"
-                    src="images/logo.png" alt="SPF@CMU logo"/><span>SPF@CMU</span>
+                    src="images/logo.png" alt="ASL@CMU logo"/><span>ASL@CMU</span>
             </a>
 
             <button type="button" class="navbar-toggle collapsed"
@@ -97,12 +97,12 @@
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#news"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
-              <li><a href="#calendar"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
-              <li><a href="#people"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
               <li><a href="#projects"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a></li>
               <li><a href="#papers"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Papers</a></li>
-              <li><a href="#code"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>
+              <li><a href="#code"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>  
+              <li><a href="#news"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
+              <li><a href="#people"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
+              <li><a href="#calendar"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
               <li><a href="#resources" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Resources</a></li>
             </ul>
           </div>
@@ -121,12 +121,12 @@
               else forms a projects.-->
               <ul class="project">
                 <li>
+                  <a href="https://arxiv.org/abs/1705.07807">Use Privacy</a></li>
                   <div><img class="img-rounded img-responsive" src="images/project_proxyuse.png"></div>
-                  <a href="https://arxiv.org/abs/1705.07807">Use Privacy</a>
                 </li>
                 <li>
-                  <div><img class="img-rounded img-responsive" src="images/project_adfisher.png"></div>
                   <a href="adfisher/index.html">Information Flow Experiments</a>
+                  <div><img class="img-rounded img-responsive" src="images/project_adfisher.png"></div>
                 </li>
                 <li>
                   <a href="??">Quantitative Input Influence</a>
