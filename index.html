@@ -16,6 +16,9 @@
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
+  <!-- Custom design template from bootswatch -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+
   <style type="text/css">
     .row.no-gutter {
       margin-left: 10px;
@@ -30,6 +33,11 @@
 
     h1,h2,h3,h4 {
       display: inline;
+    }
+
+    /* news section's line break looks ugly in mobile view */
+    h5 {
+      line-height: 1.5;
     }
 
     .person {
@@ -52,8 +60,8 @@
     }
 
     .project img {
-      width: 300px;
-      height: 200px;
+      max-width: 85%;
+      /*max-height: 200px;*/
     }
   </style>
 
@@ -81,7 +89,7 @@
             <a class="navbar-brand"
                 href="http://www.fairlyaccountable.org">
               <img height="35" class="img-rounded" style="float:left; margin-right:10px; margin-top:-7px;"
-                    src="images/logo.png" alt="SPF@CMU logo"/><span>SPF@CMU</span>
+                    src="images/logo.png" alt="ASL@CMU logo"/><span>ASL@CMU</span>
             </a>
 
             <button type="button" class="navbar-toggle collapsed"
@@ -97,12 +105,12 @@
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#news"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
-              <li><a href="#calendar"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
-              <li><a href="#people"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
               <li><a href="#projects"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a></li>
               <li><a href="#papers"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Papers</a></li>
-              <li><a href="#code"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>
+              <li><a href="#code"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>  
+              <li><a href="#news"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
+              <li><a href="#people"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
+              <li><a href="#calendar"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
               <li><a href="#resources" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Resources</a></li>
             </ul>
           </div>
@@ -121,12 +129,12 @@
               else forms a projects.-->
               <ul class="project">
                 <li>
+                  <a href="https://arxiv.org/abs/1705.07807">Use Privacy</a></li>
                   <div><img class="img-rounded img-responsive" src="images/project_proxyuse.png"></div>
-                  <a href="https://arxiv.org/abs/1705.07807">Use Privacy</a>
                 </li>
                 <li>
-                  <div><img class="img-rounded img-responsive" src="images/project_adfisher.png"></div>
                   <a href="adfisher/index.html">Information Flow Experiments</a>
+                  <div><img class="img-rounded img-responsive" src="images/project_adfisher.png"></div>
                 </li>
                 <li>
                   <a href="??">Quantitative Input Influence</a>
@@ -202,11 +210,13 @@
           <div class="row no-gutter" style="font-size: 0px;">
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.andrew.cmu.edu/user/danupam/"><img class="img-rounded img-responsive" src="https://www.andrew.cmu.edu/user/danupam/ad.jpg">Anupam Datta</a><br/>(prof.)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/~mfredrik/"><img class="img-rounded img-responsive" src="http://www.cs.cmu.edu/~mfredrik/images/mfredrik.jpg">Matt Fredrikson</a><br/>(prof.)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cis.upenn.edu/~aarthur/"><img class="img-rounded img-responsive" src="https://www.cis.upenn.edu/~aarthur/arthur.png">Arthur Azevedo de Amorim</a><br/>(postdoc)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.andrew.cmu.edu/user/amitdatt/"><img class="img-rounded img-responsive" src="https://www.andrew.cmu.edu/user/amitdatt/public/amit-datta.jpg">Amit Datta</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://sites.google.com/site/rajkiran2190/"><img class="img-rounded img-responsive" src="images/person_raj.jpeg">Raj Gupta</a><br/>(MS student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://users.ece.cmu.edu/~gko/"><img class="img-rounded img-responsive" src="images/person_gihyuk.jpeg">Gihyuk Ko</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://testblogdontupvote.tumblr.com/"><img class="img-rounded img-responsive" src="images/person_sophia.jpeg"/>Sophia Kovaleva</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://leino-online.com/klas/"><img class="img-rounded img-responsive" src="http://leino-online.com/klas/pictures/klasHomepage0.jpg"/>Klas Leino</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="??"><img class="img-rounded img-responsive" src="images/person_missing.jpeg"/>Caleb Kaiji Lu</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://piotr.mardziel.com"><img class="img-rounded img-responsive" src="http://piotr.mardziel.com/images/wolf_gap1_mug.jpg"/>Piotr Mardziel</a> (postdoc)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/"><img class="img-rounded img-responsive" src="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/me.jpg"/>Shayak Sen</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/directory/rrwagner"><img class="img-rounded img-responsive" src="http://isri.cmu.edu/education/se-phd/images/people/wagner-ryan-75.jpg"/>Ryan Wagner</a><br/>(PhD student)</div>
@@ -219,25 +229,23 @@
         <div class="panel panel-default">
           <div class="panel-heading"><h2><a name="news"></a>News</h2></div>
           <div class="panel-body">
-            <h5><span class="label
-                              label-primary">2017-10-01</span>
+            <h5><span class="label label-primary">2017-10-01</span>
               <a href="http://www.ibtimes.com/eu-countries-roll-out-proposals-curb-targeted-online-ads-companies-google-facebook-2473245">
                 International Business Times: EU Countries Roll Out
                 Proposals To Curb Targeted Online Ads By Companies
-                Like Google, Facebook</a></h5>
+                Like Google, Facebook</a>
+            </h5>
             <h5><span class="label label-primary">New</span>
               <a href="http://www.fatml.org/schedule/2016/presentation/algorithmic-transparency-quantitative-input">
                 Anupam's talk at FATML on the QII and more recent
                 works is available to watch on the website</a>
             </h5>
-            <h5><span class="label
-                              label-primary">New</span>
+            <h5><span class="label label-primary">New</span>
               <a href="http://www.acm.org/binaries/content/assets/public-policy/2017_usacm_statement_algorithms.pdf">
                 ACM Statement on Algorithmic Transparency and
                 Accountability</a>
             </h5>
-            <h5><span class="label
-                              label-default">2016-12-06</span>
+            <h5><span class="label label-default">2016-12-06</span>
               <a href="http://blogs.wsj.com/cio/2016/12/06/capital-one-pursues-explainable-ai-to-guard-against-bias-in-models/">
                 Explainable The Wallstreet Journal: AI
                 at Capital One</a>
@@ -251,8 +259,7 @@
               <a href="http://mobile.nytimes.com/2016/11/14/technology/facebook-is-said-to-question-its-influence-in-election.html">
                 NYTimes: Influence of misinformation</a>
             </h5>
-            <h5><span class="label
-                              label-default">2016-11-02</span>
+            <h5><span class="label label-default">2016-11-02</span>
               <a href="https://www.cmu.edu/news/stories/archives/2016/november/gift.html">
                 CMU NEWS: CMU receives $10 million gift K&L Gates to
                 study AI ethics</a>
