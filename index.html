@@ -16,6 +16,11 @@
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
+  <!-- Custom design template from bootswatch -->
+  <!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  -->
+
   <style type="text/css">
     .row.no-gutter {
       margin-left: 10px;
@@ -43,6 +48,11 @@
       padding-bottom: 10px;
     }
 
+    /* news section's line break looks ugly in mobile view */
+    h5 {
+      line-height: 1.5;
+    }
+
     .person img {
       width: 150px;
       /*max-width: 150px;
@@ -52,8 +62,10 @@
     }
 
     .project img {
-      width: 300px;
-      height: 200px;
+      max-width: 85%;
+      max-height: 200px;
+      display: block;
+      margin: 0 auto;
     }
   </style>
 
@@ -81,7 +93,7 @@
             <a class="navbar-brand"
                 href="http://www.fairlyaccountable.org">
               <img height="35" class="img-rounded" style="float:left; margin-right:10px; margin-top:-7px;"
-                    src="images/logo.png" alt="SPF@CMU logo"/><span>SPF@CMU</span>
+                    src="images/logo.png" alt="ASL@CMU logo"/><span>ASL@CMU</span>
             </a>
 
             <button type="button" class="navbar-toggle collapsed"
@@ -97,12 +109,12 @@
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#news"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
-              <li><a href="#calendar"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
-              <li><a href="#people"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
               <li><a href="#projects"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a></li>
               <li><a href="#papers"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Papers</a></li>
               <li><a href="#code"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>
+              <li><a href="#people"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
+              <li><a href="#news"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
+              <li><a href="#calendar"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>
               <li><a href="#resources" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Resources</a></li>
             </ul>
           </div>
@@ -121,12 +133,12 @@
               else forms a projects.-->
               <ul class="project">
                 <li>
-                  <div><img class="img-rounded img-responsive" src="images/project_proxyuse.png"></div>
                   <a href="https://arxiv.org/abs/1705.07807">Use Privacy</a>
+                  <div><img class="img-rounded img-responsive" src="images/project_proxyuse.png"></div>
                 </li>
                 <li>
-                  <div><img class="img-rounded img-responsive" src="images/project_adfisher.png"></div>
                   <a href="adfisher/index.html">Information Flow Experiments</a>
+                  <div><img class="img-rounded img-responsive" src="images/project_adfisher.png"></div>
                 </li>
                 <li>
                   <a href="??">Quantitative Input Influence</a>
@@ -200,17 +212,22 @@
       <div class="col-xs-12 col-md-12 col-lg-12" style="padding: 0 0; margin: 0 0;">
         <div class="container-fluid" style="margin: 0 0; padding: 0 0;"><a name="people"></a>
           <div class="row no-gutter" style="font-size: 0px;">
+<<<<<<< HEAD
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.andrew.cmu.edu/user/danupam/"><img class="img-rounded img-responsive" src="images/person/thumbs/anupam.jpeg">Anupam Datta</a><br/>(prof.)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/~mfredrik/"><img class="img-rounded img-responsive" src="images/person/thumbs/matt.jpeg">Matt Fredrikson</a><br/>(prof.)</div>
+            
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cis.upenn.edu/~aarthur/"><img class="img-rounded img-responsive" src="images/person/thumbs/arthur.jpeg">Arthur Azevedo de Amorim</a><br/>(postdoc)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://piotr.mardziel.com"><img class="img-rounded img-responsive" src="images/person/thumbs/piotr.jpeg"/>Piotr Mardziel</a> (postdoc)</div>
+            
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.andrew.cmu.edu/user/amitdatt/"><img class="img-rounded img-responsive" src="images/person/thumbs/amit.jpeg">Amit Datta</a><br/>(PhD student)</div>
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://sites.google.com/site/rajkiran2190/"><img class="img-rounded img-responsive" src="images/person/thumbs/raj.jpeg">Raj Gupta</a><br/>(MS student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/"><img class="img-rounded img-responsive" src="images/person/thumbs/shayak.jpeg"/>Shayak Sen</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://users.ece.cmu.edu/~gko/"><img class="img-rounded img-responsive" src="images/person/thumbs/gihyuk.jpeg">Gihyuk Ko</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://testblogdontupvote.tumblr.com/"><img class="img-rounded img-responsive" src="images/person/thumbs/sophia.jpeg"/>Sophia Kovaleva</a><br/>(PhD student)</div>
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://leino-online.com/klas/"><img class="img-rounded img-responsive" src="images/person/thumbs/klas.jpeg"/>Klas Leino</a><br/>(PhD student)</div>
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://piotr.mardziel.com"><img class="img-rounded img-responsive" src="images/person/thumbs/piotr.jpeg"/>Piotr Mardziel</a> (postdoc)</div>
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/"><img class="img-rounded img-responsive" src="images/person/thumbs/shayak.jpeg"/>Shayak Sen</a><br/>(PhD student)</div>
-<!--            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/directory/rrwagner"><img class="img-rounded img-responsive" src="http://isri.cmu.edu/education/se-phd/images/people/wagner-ryan-75.jpg"/>Ryan Wagner</a><br/>(PhD student)</div>-->
             <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.linkedin.com/in/samuel-yeom-b6377bb8/"><img class="img-rounded img-responsive" src="images/person/thumbs/sam.jpeg"/>Samuel Yeom</a><br/>(PhD student)</div>
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="??"><img class="img-rounded img-responsive" src="images/person/thumbs/caleb.jpeg"/>Caleb Kaiji Lu</a><br/>(PhD student)</div>
+            <!--            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/directory/rrwagner"><img class="img-rounded img-responsive" src="http://isri.cmu.edu/education/se-phd/images/people/wagner-ryan-75.jpg"/>Ryan Wagner</a><br/>(PhD student)</div>-->
+            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://sites.google.com/site/rajkiran2190/"><img class="img-rounded img-responsive" src="images/person/thumbs/raj.jpeg">Raj Gupta</a><br/>(MS student)</div>
           </div>
         </div>
       </div>

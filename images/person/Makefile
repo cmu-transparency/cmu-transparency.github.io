@@ -1,5 +1,5 @@
-PEOPLE := alexandra alfred amit anne anupam arthur daniel david gihyuk helen \
-	jeannette klas matt michael ole piotr raj shayak saikat sophia tom 
+PEOPLE := alexandra alfred amit anne anupam arthur caleb daniel david gihyuk helen \
+	jeannette klas matt michael ole piotr raj shayak saikat sam sophia tom 
 
 PEOPLE_IMAGES := $(PEOPLE:%=%.jpeg)
 PEOPLE_THUMBS := $(PEOPLE:%=thumbs/%.jpeg)
