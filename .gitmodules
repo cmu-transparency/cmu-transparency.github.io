@@ -1,3 +1,6 @@
 [submodule "images/person/utility-face-thumbnailer"]
 	path = images/person/utility-face-thumbnailer
 	url = git@github.com:piotrm0/utility-face-thumbnailer.git
+[submodule "satc"]
+	path = satc
+	url = git@github.com:cmu-transparency/website-satc.git
