@@ -1,0 +1,3 @@
+[submodule "images/person/utility-face-thumbnailer"]
+	path = images/person/utility-face-thumbnailer
+	url = git@github.com:piotrm0/utility-face-thumbnailer.git
