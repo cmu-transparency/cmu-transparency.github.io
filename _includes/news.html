@@ -1,0 +1,19 @@
+
+<div class="well">
+  <ul class="list-group">
+  <h4>News</h4>
+
+  {% for article in site.data.news limit:9 %}
+  <li class="list-group-item">
+  <h6><span class="label label-primary">{{ article.date }}</span></h6>
+  <h5> {{ article.headline }}</h5>
+    </li>
+    {% endfor %}
+
+
+  <!-- <p><em>{{ article.headline }}</em></p> -->
+
+  <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
+
+  </ul>
+</div>

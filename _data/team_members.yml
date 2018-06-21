@@ -1,0 +1,59 @@
+- name: Anupam Datta
+  photo: anupam.jpeg
+  info: Professor
+  email: danupam@cmu.edu
+  website: http://www.andrew.cmu.edu/user/danupam/
+
+- name: Matt Fredrikson
+  photo: matt.jpeg
+  info: Assistant Professor
+  email: matt.fredrikson@cmu.edu
+  website: http://www.cs.cmu.edu/~mfredrik/
+
+- name: Arthur Azevedo de Amorim
+  photo: arthur.jpeg
+  info: Postdoc
+  email:
+  website: https://www.cis.upenn.edu/~aarthur/
+
+- name: Piotr Mardziel
+  photo: piotr.jpeg
+  info: Postdoc
+  email:
+  website: http://piotr.mardziel.com/
+
+- name: Shayak Sen
+  photo: shayak.jpeg
+  info: PhD Student
+  email:
+  website: http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/
+
+- name: Gihyuk Ko
+  photo: gihyuk.jpeg
+  info: PhD Student
+  email:
+  website: https://users.ece.cmu.edu/~gko/
+
+- name: Sophia Kovaleva
+  photo: sophia.jpeg
+  info: PhD Student
+  email:
+  website: https://testblogdontupvote.tumblr.com/
+
+- name: Klas Leino
+  photo: klas.jpeg
+  info: PhD Student
+  email:
+  website: http://www.cs.cmu.edu/afs/cs/user/kleino/www/
+
+- name: Samuel Yeom
+  photo:
+  info: PhD Student
+  email:
+  website: https://www.linkedin.com/in/samuel-yeom-b6377bb8/
+
+- name: Caleb Kaiji Lu
+  photo: caleb.jpeg
+  info: PhD Student
+  email:
+  website:
