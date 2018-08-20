@@ -4,404 +4,350 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
   <link rel="shortcut icon" href="images/favicon.ico" />
 
   <title>Accountable Systems Lab at CMU</title>
 
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-
-  <!-- Custom design template from bootswatch -->
-  <!--
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  -->
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous"/>
 
   <style type="text/css">
-    .row.no-gutter {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    .row.no-gutter [class*='col-']:not(:first-child),
-    .row.no-gutter [class*='col-']:not(:last-child) {
-      padding-right: 5px;
-      padding-left: 5px;
-    }
-
-    h1,h2,h3,h4 {
-      display: inline;
-      margin: 0.5em 0;
-    }
-
     .person {
       float: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 0.9em;
       text-align: center;
       vertical-align: top;
-      margin: 0px 0px;
-      padding: 0px 0px;
-      padding-bottom: 10px;
+      padding: 5px 5px;
     }
-
-    /* news section's line break looks ugly in mobile view */
-    h5 {
-      line-height: 1.4;
-      padding: 0px;
-    }
-
     .person img {
       width: 150px;
-      /*max-width: 150px;
-      max-height: 175px;*/
-/*    width: auto;
-      height: auto;*/
     }
 
-    .project img {
-      max-width: 85%;
-      max-height: 200px;
-      display: block;
-      margin: 0 auto;
+    p {
+      margin-bottom: 0.25em;
     }
 
-    .list ul,ol {
-      padding-top: 10px;
-    }
-    .list li {
-      padding: 5px;
-    }
-    
-    .panel-body {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
+/*    .card-header {
+    padding: 0.25em;
+    margin: 0px;
+    }*/
+
   </style>
 
 </head>
 
 <body>
-  <div class="container-fluid" style="padding: 0 0px; margin: 0 0px;">
-    <div class="row" style="padding: 0 0px; margin: 0 0px;">
 
-      <div class="col-xs-12 col-sm-12 hidden-md hidden-lg" style="padding-top:60px;"></div>
-      
-      <div class="col-md-12 hidden-xs hidden-sm" style="padding: 0px; margin-bottom:-10px;">
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="http://www.fairlyaccountable.org">
-              <img class="img-rounded" style="float:left; margin-right:10px; margin-top:-7px;" height="35" src="images/logo.png"/>
-              Accountable Systems Lab at CMU</a>
-          </div>
-        </nav>
-      </div>
+<nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
+  <a class="d-none d-md-block navbar-brand navbar-expand-lg"
+     href="https://www.fairlyaccountable.org">
+    <img style="height:1.5em;" class="rounded d-inline-block align-top"
+	 src="images/asl_logo.png"/>
+    <span>Accountable Systems Lab at CMU</span>
+  </a>
 
-      <div class="col-xs-12 hidden-md hidden-lg">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header" style="vertical-align: middle;">
-              <a class="navbar-brand"
-                 href="http://www.fairlyaccountable.org">
-                <img height="35" class="img-rounded" style="float:left; margin-right:10px; margin-top:-7px;"
-                     src="images/logo.png" alt="ASL@CMU logo"/><span>ASL@CMU</span>
-              </a>
+  <a class="d-block d-md-none navbar-brand"
+     href="https://www.fairlyaccountable.org">
+    <img style="height:1.5em;" class="rounded d-inline-block align-top"
+	 src="images/asl_logo.png"
+	 alt="ASL@CMU logo"/>
+    <span>ASL@CMU</span>
+  </a>
+  <button type="button" class="navbar-toggler"
+	  data-toggle="collapse"
+          data-target="#navbar"
+	  aria-controls="navbarSupportedContent"
+	  aria-label="Toggle navigation"
+          aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-              <button type="button" class="navbar-toggle collapsed"
-                      data-toggle="collapse"
-                      data-target="#bs-example-navbar-collapse-1"
-                      aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
+  <div class="collapse navbar-collapse"
+       id="navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+	<a href="#projects"
+	   class="nav-link">
+	  Projects
+	</a>
+      </li>
+      <li class="nav-item">
+	<a href="#people"
+	   class="nav-link">
+	  People
+	</a>
+      </li>
+      <li class="nav-item">
+	<a href="#papers"
+	   class="nav-link">
+	  Papers
+	</a>
+      </li>
+      <!--<li class="nav-item">
+	<a href="#news"
+	   class="nav-link">
+	  News
+	</a>
+      </li>-->
+    </ul>
+  </div>
+</nav>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#projects"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Projects</a></li>
-                <li><a href="#papers"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Papers</a></li>
-                <li><a href="#code"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Code</a></li>
-                <li><a href="#people"    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">People</a></li>
-                <li><a href="#news"      data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">News</a></li>
-<!--                <li><a href="#calendar"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Calendar</a></li>-->
-                <li><a href="#resources" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Resources</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+<div class="container-fluid">
 
-      <div class="col-xs-12 col-md-12 col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-heading"><h4><a name="news"></a>News</h4></div>
-          <div class="panel-body">
-            <h5><span class="label label-primary">2018-02-15</span>
-              The Economist
-              article <a href="https://www.economist.com/news/science-and-technology/21737018-if-it-cannot-who-will-trust-it-artificial-intelligence-thrive-it-must">
-              For artificial intelligence to thrive, it must explain
-              itself
-            </a> mentions the work of Lab's Prof. Anupam Datta.</h5>
-            <h5><span class="label label-primary">2017-10-01</span>
-              <a href="http://www.ibtimes.com/eu-countries-roll-out-proposals-curb-targeted-online-ads-companies-google-facebook-2473245">
-                International Business Times: EU Countries Roll Out
-                Proposals To Curb Targeted Online Ads By Companies
-                Like Google, Facebook</a></h5>
-<!--            <h5><span class="label label-primary">New</span>
-              <a href="http://www.fatml.org/schedule/2016/presentation/algorithmic-transparency-quantitative-input">
-                Anupam's talk at FATML on the QII and more recent
-                works is available to watch on the website</a>
-            </h5>-->
-            <h5><span class="label label-primary">2017-01-12</span>
-              <a href="http://www.acm.org/binaries/content/assets/public-policy/2017_usacm_statement_algorithms.pdf">
-                ACM Statement on Algorithmic Transparency and
-                Accountability</a>
-            </h5>
-            <h5><span class="label label-default">2016-12-06</span>
-              <a href="http://blogs.wsj.com/cio/2016/12/06/capital-one-pursues-explainable-ai-to-guard-against-bias-in-models/">
-                Explainable The Wallstreet Journal: AI
-                at Capital One</a>
-            </h5>
-            <h5><span class="label label-default">2016-11-15</span>
-              <a href="https://mobile.nytimes.com/2016/11/15/technology/google-will-ban-websites-that-host-fake-news-from-using-its-ad-service.html">
-                Google and Facebook Take Aim at Fake News Sites
-              </a>
-            </h5>
-            <h5><span class="label label-default">2016-11-14</span>
-              <a href="http://mobile.nytimes.com/2016/11/14/technology/facebook-is-said-to-question-its-influence-in-election.html">
-                NYTimes: Influence of misinformation</a>
-            </h5>
-            <h5><span class="label label-default">2016-11-02</span>
-              <a href="https://www.cmu.edu/news/stories/archives/2016/november/gift.html">
-                CMU NEWS: CMU receives $10 million gift K&L Gates to
-                study AI ethics</a>
-            </h5>
-            <h5><span class="label label-default">2016-10-31</span>
-              <a href="http://pittsburghpa.gov/mayor/release?id=6658">
-                Pittsburgh Launches Burgh's Eye View</a>
-            </h5>
-            <h5><span class="label label-default">2016-10-07</span>
-              <a href="https://techcrunch.com/2016/10/07/google-aims-to-prevent-discriminatory-ai-with-equality-of-opportunity-method/">
-                TechCrunch: Google researchers aim to prevent AIs
-                from discriminating</a>
-            </h5>
-            <h5><span class="label label-default">2016-10-01</span>
-              <a href="http://www.newyorker.com/business/currency/how-an-old-hacking-law-hampers-the-fight-against-online-discrimination">
-                The New Yorker: How an old hacking law hampers the
-                fight against online discrimination</a>
-            </h5>
-            <h5><span class="label label-default">2016-09-28</span>
-              <a href="http://money.cnn.com/2016/09/28/technology/aetna-apple-watch/">
-                CNN: AETNA insurance will subsidize the Apple Watch</a>
-            </h5>
-            <!-- TODO: News about the group but also related to the group's topics of
-            security, privacy, and fairness. RSS feed as well? -->
-          </div>
-        </div>
-      </div>
-      
-      <!-- <div class="col-xs-12 alert alert-warning" role="alert">This website is presently under construction.</div> -->
-      <a name="projects"></a>
+<a name="projects"></a>
 
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="panel-default">
-          <div class="panel-heading"><h4><a href="https://arxiv.org/abs/1705.07807">Use
-                Privacy</a></h4></div>
-          <div><img class="img-rounded img-responsive"
-                    src="images/project_proxyuse.png"></div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="panel-default">
-          <div class="panel-heading"><h4><a href="adfisher/index.html">Information
-                Flow Experiments</a></h4></div>
-          <div><img class="img-rounded img-responsive"
-                    src="images/project_adfisher.png"></div>
-        </div>
-      </div>
-      
-      <div style="clear: both;"/>
-      
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="panel-default">
-          <div class="panel-heading"><h4>Other Projects</h4></div>
-            <div class="panel-body list">
-              <!--TODO: Links to project pages and short descriptions of the projects.
-              Maybe have one project for each grant and whatever
-              else forms a projects.-->
-              
-              <ul class="project">
-                <li>
-                  <a href="??">Quantitative Input Influence</a>
-                </li>
-                <li>
-                  <a href="satc/index.html">SaTC: Accountable
-                  Information Use: Privacy and Fairness in
-                  Decision-Making Systems</a>
-                </li>
-              </ul>
-              
-            </div>
-        </div>
-      </div>
+<div class="row pt-3 mb-2">
+<div class="card-deck">
 
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="panel-default">
-          <div class="panel-heading"><h4><a name="papers"></a>Papers</h4></div>
-            <div class="panel-body list">
-              <!--TODO: All the relevant papers published by group people along with the
-              abstract and bibtex entries for each.-->
-              <ul>
-                <li>
-                  <b><a href="https://arxiv.org/abs/1710.05899">Differential Privacy As Causal Property</a></b><br>
-                  <font size="-1">M. C. Tschantz, S. Sen, A. Datta<br>
-                  Preprint, October 2017</font>
-                </li>
-
-                <li>
-                  <b><a href="https://arxiv.org/abs/1705.07807">Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt Programs</a></b><br>
-                  <font size="-1">A. Datta, M. Fredrikson, G. Ko, P. Mardziel, S. Sen<br>
-                  In  Proceedings of the ACM Conference on Computer and Communications Security (CCS), October 2017</font>
-                </li>
-                <li>
-                  <b><a href="https://www.andrew.cmu.edu/user/danupam/datta-sen-zick-oakland16.pdf">Algorithmic Transparency via Quantitative Input Influence: Theory and Experiments with Learning Systems</a></b><br>
-                  <font size="-1">A. Datta, S. Sen, Y. Zick<br>
-                  In  Proceedings of IEEE Symposium of Security and Privacy (Oakland), May 2016</font>
-                </li>
-                <li>
-                  <b><a href="https://www.degruyter.com/downloadpdf/j/popets.2015.1.issue-1/popets-2015-0007/popets-2015-0007.pdf">Automated Experiments on Ad Privacy Settings: A Tale of Opacity, Choice, and Discrimination</a></b><br>
-                  <font size="-1">A. Datta, M. C. Tschantz, A. Datta<br>
-                  In  Proceedings of Privacy Enhancing Technologies. Volume 2015, Issue 1, Pages 92–112.</font>
-                </li>
-                <!--
-                <li>
-                  <b><a href="??">paper c</a></b><br>
-                  <font size="-1">authors c<br>
-                  In  Proceedings of conference c. month c.</font>
-                </li>
-                -->
-              </ul>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-md-12 col-lg-12">
-        <div class="panel-default">
-<!--        <div class="container-fluid" style="margin: 0 0; padding: 0 0;">-->
-          <div class="panel-heading"><h4><a name="people"></a>People</h4></div>
-          <div class="panel-body">
-          <div class="row no-gutter" style="font-size: 0px; padding-top: 10px;">
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.andrew.cmu.edu/user/danupam/"><img class="img-rounded img-responsive" src="images/person/thumbs/anupam.jpeg">Anupam Datta</a><br/>(prof.)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/~mfredrik/"><img class="img-rounded img-responsive" src="images/person/thumbs/matt.jpeg">Matt Fredrikson</a><br/>(prof.)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://piotr.mardziel.com"><img class="img-rounded img-responsive" src="images/person/thumbs/piotr.jpeg"/>Piotr Mardziel</a> (systems scientist)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cis.upenn.edu/~aarthur/"><img class="img-rounded img-responsive" src="images/person/thumbs/arthur.jpeg">Arthur Azevedo de Amorim</a><br/>(postdoc)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/"><img class="img-rounded img-responsive" src="images/person/thumbs/shayak.jpeg"/>Shayak Sen</a><br/>(postdoc)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://users.ece.cmu.edu/~gko/"><img class="img-rounded img-responsive" src="images/person/thumbs/gihyuk.jpeg">Gihyuk Ko</a><br/>(PhD student)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://testblogdontupvote.tumblr.com/"><img class="img-rounded img-responsive" src="images/person/thumbs/sophia.jpeg"/>Sophia Kovaleva</a><br/>(PhD student)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="http://www.cs.cmu.edu/afs/cs/user/kleino/www/"><img class="img-rounded img-responsive" src="images/person/thumbs/klas.jpeg"/>Klas Leino</a><br/>(PhD student)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.linkedin.com/in/samuel-yeom-b6377bb8/"><img class="img-rounded img-responsive" src="images/person/person_missing.jpeg"/>Samuel Yeom</a><br/>(PhD student)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="??"><img class="img-rounded img-responsive" src="images/person/thumbs/caleb.jpeg"/>Caleb Kaiji Lu</a><br/>(PhD student)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.scs.cmu.edu/directory/emilybla"><img class="img-rounded img-responsive" src="images/person/person_missing.jpeg"/>Emily Black</a><br/>(PhD student)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://zhanghan177.me/"><img class="img-rounded img-responsive" src="images/person/thumbs/han.jpeg"/>Han Zhang</a><br/>(PhD student)</div>
-
-            <!--            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/directory/rrwagner"><img class="img-rounded img-responsive" src="http://isri.cmu.edu/education/se-phd/images/people/wagner-ryan-75.jpg"/>Ryan Wagner</a><br/>(PhD student)</div>-->
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.andrew.cmu.edu/user/amitdatt/"><img class="img-rounded img-responsive" src="images/person/thumbs/amit.jpeg">Amit Datta</a><br/>(PhD alumnus)</div>
-
-            <div class="person col-xs-3 col-sm-2 col-md-2 col-lg-1"><a href="https://sites.google.com/site/rajkiran2190/"><img class="img-rounded img-responsive" src="images/person/thumbs/raj.jpeg">Raj Gupta</a><br/>(MS alumnus)</div>
-
-          </div>
-	  <!-- add Emily -->
-	  <!-- add Han   -->
-<!--        </div>-->
-        </div>
-        </div>
-        </div>
-
-      <!--
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <a name="calendar"></a>
-        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=fuj58c65qid5ljt6bpi3cv2ei0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FNew_York"
-                style="border-width:0" width="100%" height="300"
-                frameborder="0" scrolling="no"></iframe>
-            TODO: Relevant events in a google (or other subscribable) calendar.
-            Include group meetings but also relevant conference deadlines and
-            conference dates.
-      </div>
-      -->
-  
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="panel panel-default">
-          <div class="panel-heading"><h4><a name="resources"></a>Resources</h4></div>
-            <div class="panel-body list">
-              <!--TODO: Links to other relevant resources. Other groups with the same
-              focus, conferences, etc.-->
-
-              <h5>Conferences / Workshops</h5>
-              <ul>
-                <li>FAT* 2018, 2019</li>
-                <li>FATML</li>
-                <li>CSF</li>
-                <li>POST</li>
-                <li>NDSS</li>
-                <li>S&P</li>
-                <li>CCS</li>
-              </ul>
-
-<!--              <h4>Data</h4>
-              <ul>
-                <li><a href="https://data.sfgov.org">SF OpenData</a></li>
-                <li><a href="http://codeforpittsburgh.github.io">Code for Pittsburgh</a></li>
-              </ul>-->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <div class="panel panel-default">
-          <div class="panel-heading"><h4><a name="code"></a>Code</h4></div>
-            <div class="panel-body list">
-              <ul>
-                <!--TODO: Published code, though this might fit better in the projects
-                section.-->
-                <li><a href="https://github.com/tadatitam/info-flow-experiments">AdFisher</a></li>
-                <li><a href="https://github.com/cmu-transparency/artifact-proxyuse-ccs2017">ProxyUse</a></li>
-                <!--
-                <li><a href="??">code b</a></li>
-                <li><a href="??">code c</a></li>
-                -->
-              </ul>
-            </div>
-        </div>
-      </div>
-
+  <div class="card border-light mr-sm-1 pt-0 mt-0">
+    <div class="card-header">
+      <a class="card-title" name="project-information-flow-experiments">Proxy Use</a>
+      <a class="badge badge-secondary" href="https://arxiv.org/abs/1705.07807">paper</a>
+      <a class="badge badge-secondary" href="https://github.com/cmu-transparency/artifact-proxyuse-ccs2017">code</a>
     </div>
-      
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <div class="card-body">
+      <img class="rounded img-fluid" src="images/project_proxyuse.png"/>
+    </div>
+  </div>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+  <div class="card border-light ml-sm-1 mr-sm-1 mt-0 pt-0">
+    <div class="card-header">
+      <a class="card-title" name="project-information-flow-experiments">Information Flow Experiments</a>
+      <a class="badge badge-secondary" href="adfisher/index.html">website</a>
+      <a class="badge badge-secondary" href="https://github.com/tadatitam/info-flow-experiments">code</a>
+    </div>
+    <div class="card-body">
+      <img class="rounded img-fluid" src="images/project_adfisher.png"/>
+    </div>
+  </div>
+
+  <div class="card border-light ml-sm-1 mr-sm-1">
+    <div class="card-header">
+      <a class="card-title" name="project-other">Other Projects</a>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote">
+	<h6>Quantitative Input Influence</h6>
+	<a class="badge badge-secondary" href="https://www.andrew.cmu.edu/user/danupam/datta-sen-zick-oakland16.pdf">paper</a>
+	<!--footer class="blockquote-footer">asdf</footer-->
+      </blockquote>
+      <blockquote class="blockquote">
+	<h6>Accountable Information Use: Privacy and Fairness in Decision-Making Systems</h6>
+	<a class="badge badge-secondary" href="satc/index.html">website</a>
+	<!-- footer class="blockquote-footer">asdf</footer-->
+      </blockquote>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="row">
+
+<div class="card col-12 p-0 border-light">
+  <div class="card-header">
+    <a class="card-title" name="people">People</a>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	<a href="http://www.andrew.cmu.edu/user/danupam/">
+	  <img class="rounded img-fluid" src="images/person/thumbs/anupam.jpeg"/>
+	  Anupam Datta</a>
+	<br/>(prof.)
+      </div>
+      <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	<a href="http://www.cs.cmu.edu/~mfredrik/">
+	  <img class="rounded img-fluid" src="images/person/thumbs/matt.jpeg"/>
+	  Matt Fredrikson</a>
+	<br/>(prof.)
+      </div>
+      <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	<a href="http://piotr.mardziel.com">
+	  <img class="rounded img-fluid" src="images/person/thumbs/piotr.jpeg"/>
+	  Piotr Mardziel</a>
+	<br/>(systems scientist)
+      </div>
+      <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	<a href="https://www.cis.upenn.edu/~aarthur/">
+	  <img class="rounded img-fluid" src="images/person/thumbs/arthur.jpeg"/>
+	  Arthur Azevedo de Amorim</a>
+	<br/>(postdoc)
+      </div>
+      <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	<a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/shayaks/">
+	  <img class="rounded img-fluid" src="images/person/thumbs/shayak.jpeg"/>
+	  Shayak Sen</a><br/>
+	(postdoc)
+      </div>
+      <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	<a href="https://users.ece.cmu.edu/~gko/">
+	  <img class="rounded img-fluid" src="images/person/thumbs/gihyuk.jpeg"/>
+	  Gihyuk Ko</a><br/>
+	(PhD student)
+      </div>
+      <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	<a href="https://testblogdontupvote.tumblr.com/">
+	  <img class="rounded img-fluid" src="images/person/thumbs/sophia.jpeg"/>
+	  Sophia Kovaleva</a><br/>
+	(PhD student)
+      </div>
+      <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	<a href="http://www.cs.cmu.edu/afs/cs/user/kleino/www/">
+	  <img class="rounded img-fluid" src="images/person/thumbs/klas.jpeg"/>
+	  Klas Leino</a><br/>
+	(PhD student)
+      </div>
+        <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	  <a href="https://www.linkedin.com/in/samuel-yeom-b6377bb8/">
+	    <img class="rounded img-fluid" src="images/person/person_missing.jpeg"/>
+	    Samuel Yeom</a>
+	  <br/>(PhD student)
+	</div>
+        <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	  <a href="??">
+	    <img class="rounded img-fluid" src="images/person/thumbs/caleb.jpeg"/>
+	    Caleb Kaiji Lu</a><br/>
+	  (PhD student)
+	</div>
+        <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	  <a href="https://www.scs.cmu.edu/directory/emilybla">
+	    <img class="rounded img-fluid" src="images/person/person_missing.jpeg"/>
+	    Emily Black</a><br/>
+	  (PhD student)
+	</div>
+        <div class="person col-3 col-sm-2 col-md-2 col-lg-1">
+	  <a href="https://zhanghan177.me/">
+	    <img class="rounded img-fluid" src="images/person/thumbs/han.jpeg"/>Han Zhang</a>
+	  <br/>(PhD student)
+	</div>
+
+        <!--
+	    <div class="person col-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.cs.cmu.edu/directory/rrwagner"><img class="rounded img-fluid" src="http://isri.cmu.edu/education/se-phd/images/people/wagner-ryan-75.jpg"/>Ryan Wagner</a><br/>(PhD student)</div>
+	    <div class="person col-3 col-sm-2 col-md-2 col-lg-1"><a href="https://www.andrew.cmu.edu/user/amitdatt/"><img class="rounded img-fluid" src="images/person/thumbs/amit.jpeg">Amit Datta</a><br/>(PhD alumnus)</div>
+	    <div class="person col-3 col-sm-2 col-md-2 col-lg-1"><a href="https://sites.google.com/site/rajkiran2190/"><img class="rounded img-fluid" src="images/person/thumbs/raj.jpeg">Raj Gupta</a><br/>(MS alumnus)</div>
+	    -->
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="row">
+
+<div class="card col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 border-light">
+  <div class="card-header"><a class="card-title" name="papers">Papers</a></div>
+  <div class="card-body">
+    <blockquote class="blockquote"><a class="h6" href="https://arxiv.org/abs/1710.05899">
+	Differential Privacy As Causal
+        Property</a>
+      <footer class="blockquote-footer">M. C. Tschantz, S. Sen, A. Datta. Preprint, October 2017</footer>
+    </blockquote>
+    <blockquote class="blockquote"><a class="h6" href="https://arxiv.org/abs/1705.07807">
+	Use Privacy in Data-Driven Systems: Theory and Experiments with Machine Learnt
+	Programs</a>
+      <footer class="blockquote-footer">A. Datta, M. Fredrikson, G. Ko, P. Mardziel, S. Sen. In Proceedings of the ACM Conference
+	on Computer and Communications Security (CCS), October 2017
+      </footer>
+    </blockquote>
+    <blockquote class="blockquote"><a class="h6" href="https://www.andrew.cmu.edu/user/danupam/datta-sen-zick-oakland16.pdf">
+	Algorithmic Transparency via Quantitative Input Influence: Theory and Experiments
+	with Learning Systems</a>
+      <footer class="blockquote-footer">
+	A. Datta, S. Sen, Y. Zick. In Proceedings of IEEE Symposium of Security and Privacy
+	(Oakland), May 2016
+      </footer>
+    </blockquote>
+    <blockquote class="blockquote"><a class="h6" href="https://www.degruyter.com/downloadpdf/j/popets.2015.1.issue-1/popets-2015-0007/popets-2015-0007.pdf">
+	Automated Experiments on Ad Privacy Settings: A Tale of Opacity, Choice, and
+        Discrimination</a>
+      <footer class="blockquote-footer">
+	A. Datta, M. C. Tschantz, A. Datta. In Proceedings of Privacy Enhancing Technologies.
+        Volume 2015, Issue 1, Pages 92–112.
+      </footer>
+    </blockquote>
+  </div>
+</div>
+
+</div>
+<div class="row p-2 no-border">
+
+<!--
+    <div class="col-12 col-md-6 col-lg-6">
+      <a name="calendar"></a>
+      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=fuj58c65qid5ljt6bpi3cv2ei0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FNew_York"
+              style="border-width:0" width="100%" height="300" frameborder="0"
+              scrolling="no"></iframe> TODO: Relevant events in a google (or other
+      subscribable) calendar. Include group meetings but also relevant conference
+      deadlines and conference dates.
+    </div>
+    -->
+<!--
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="card">
+        <div class="card-header"><h4><a name="resources"></a>Resources</h4></div>
+        <div class="card-body list">
+          <h5>Conferences / Workshops</h5>
+          <ul>
+            <li>FAT* 2018, 2019</li>
+            <li>FATML</li>
+            <li>CSF</li>
+            <li>POST</li>
+            <li>NDSS</li>
+            <li>S&P</li>
+            <li>CCS</li>
+          </ul>
+          <h4>Data</h4>
+          <ul>
+            <li><a href="https://data.sfgov.org">SF OpenData</a></li>
+            <li><a href="http://codeforpittsburgh.github.io">Code for Pittsburgh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+-->
+<!--
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="card">
+        <div class="card-header"><h4><a name="code"></a>Code</h4></div>
+        <div class="card-body list">
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    -->
+
+</div>
+
+<br/>
+
+<div class="text-center">
+<!--  <img width="200px" src="images/asl_logo.png"/>-->
+  <img width="200px" src="satc/images/logo_seal_cmu.png"/>
+</div>
+
+<br/>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	crossorigin="anonymous">
+</script>
 
 </body>
-
 </html>
