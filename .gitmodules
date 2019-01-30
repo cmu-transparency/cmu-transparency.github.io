@@ -4,6 +4,3 @@
 [submodule "satc"]
 	path = satc
         url = https://github.com/cmu-transparency/website-satc.git
-[submodule "apc-website"]
-	path = apc-website
-	url = https://github.com/cmu-transparency/apc-website
