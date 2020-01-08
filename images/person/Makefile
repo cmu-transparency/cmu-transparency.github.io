@@ -1,5 +1,5 @@
 PEOPLE := amit anupam arthur caleb gihyuk klas matt piotr raj shayak \
-	  sophia caleb 
+	  sophia caleb zifan
 
 PEOPLE_IMAGES := $(PEOPLE:%=%.jpeg)
 PEOPLE_THUMBS := $(PEOPLE:%=thumbs/%.jpeg)
